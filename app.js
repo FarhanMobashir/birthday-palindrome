@@ -35,6 +35,7 @@ checkButton.addEventListener("click", function () {
     setTimeout(() => {
       output.innerText = "";
       birthdateInput.value = "";
+      userBirthdate = "";
     }, 3000);
   } else if (isPalindrome(userBirthdate) === false) {
     output.innerText = `Sorry , your birthdate ${
@@ -43,6 +44,7 @@ checkButton.addEventListener("click", function () {
     setTimeout(() => {
       output.innerText = "";
       birthdateInput.value = "";
+      userBirthdate = "";
     }, 3000);
   }
 });
