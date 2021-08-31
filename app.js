@@ -32,9 +32,17 @@ checkButton.addEventListener("click", function () {
     output.innerText = `Wooho your birthdate ${
       formattedDate[2] + "-" + formattedDate[1] + "-" + formattedDate[0]
     }  is a palindrome`;
+    setTimeout(() => {
+      output.innerText = "";
+      birthdateInput.value = "";
+    }, 3000);
   } else if (isPalindrome(userBirthdate) === false) {
     output.innerText = `Sorry , your birthdate ${
       formattedDate[2] + "-" + formattedDate[1] + "-" + formattedDate[0]
     } is not a palindrome`;
+    setTimeout(() => {
+      output.innerText = "";
+      birthdateInput.value = "";
+    }, 3000);
   }
 });
